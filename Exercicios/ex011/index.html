@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em <abbr title="Hyper text markup language">HTML</abbr>5.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Paradise.mp3" type="audio/mpeg">
+        <source src="midia/Paradise.ogg" type="audio/ogg">
+        <source src="midia/Paradise.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Paradise.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <audio controls>
+        <source src="midia/Toy Shopping - Jeremy Korpas.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

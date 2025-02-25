@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .secreto > a{
+            display: none;
+        }
+        .secreto:hover > a{
+            display: inline;
+            background-color: aqua;
+        }
+        li{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio da Navegação</h1>
+    <hr>
+    <p>Esta é a página principal, o índice do seu site. É a página cinza. <br>A partir dela você pode acessar outras áreas <br>principais através dos links a seguir:</p>
+    <ul>
+        <li><a href="pag01.html">Acessar a área Verde</a></li>
+        <li><a href="pag02.html">Acessar a área Amarela</a></li>
+        <li class="secreto"><a href="pag03.html">Acessar a área Secreta</a></li>
+    </ul>
+</body>
+</html>
