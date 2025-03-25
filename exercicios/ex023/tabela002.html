@@ -25,6 +25,14 @@
             margin: auto;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(77, 77, 77);
+            color: white;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -41,7 +49,11 @@
         }
 
         #total {
-            width: 120px;
+            width: 100px;
+        }
+
+        #popu {
+            width: 140px;
         }
     </style>
 </head>
@@ -51,6 +63,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD ,TH
             TBODY
@@ -60,11 +73,14 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th id="total">% do total (2024)</th>
+                <th scope="col">Estado</th>
+                <th id="popu" scope="col">População</th>
+                <th id="total" scope="col">% do total (2024)</th>
             </tr>
         </thead>
         <tbody>
@@ -232,9 +248,9 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
-                <td class="porcen">100%</td>
+                <td class="porcen"><strong>100%</strong></td>
             </tr>
         </tfoot>
     </table>
