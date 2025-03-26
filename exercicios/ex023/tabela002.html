@@ -10,6 +10,7 @@
 
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(0, 255, 170);
         }
 
         h1 {
@@ -20,6 +21,7 @@
         }
 
         table {
+            position: relative;
             width: 600px;
             border-collapse: collapse;
             margin: auto;
@@ -29,18 +31,33 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: rgb(77, 77, 77);
-            color: white;
+            background-color: lightgray;
         }
-
+        
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
-
+        
         thead, tfoot {
+            background-color: rgb(77, 77, 77);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(77, 77, 77);;
+        }
+
+        tbody > tr:nth-child(odd) { /* odd ou 2n-1 = impar */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* even ou 2n = par */
             background-color: lightgray;
         }
+
         td.num {
             text-align: right;
         }
