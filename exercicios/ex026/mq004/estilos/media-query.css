@@ -36,6 +36,11 @@ Grandes telas: Acima de 1200px
     body {
         background-image: url(../imagens/back-tablet.jpg);
     }
+
+    main h1 {
+        color: brown;
+    }
+
     img#phone { display: none;}
     img#tablet {display: block;}
     img#print {display: none;}
