@@ -31,19 +31,20 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    
+
     background-color: #12335e;
     padding: 12px;
     color: white;
 }
 
 header > h1 {
-    border: 1px dotted whitesmoke;
+    /* border: 1px dotted whitesmoke; */
     flex: 0 0 180px;
+    text-shadow: 2px 2px 0px #00000065;
 }
 
 header > nav {
-    border: 1px dotted whitesmoke;
+    /* border: 1px dotted whitesmoke; */
     
     display: flex;
     flex-flow: row wrap;
@@ -59,6 +60,7 @@ header > nav > a {
     border-radius: 10px;
     text-align: center;
     transition-duration: 0.5s;
+    box-shadow: 2px 2px 4px #0000005b, -2px -2px 4px #ffffff5b;
 }
 
 header > nav > a:hover {
