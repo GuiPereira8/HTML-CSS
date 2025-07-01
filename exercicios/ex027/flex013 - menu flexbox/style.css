@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fonte 1 Noto sans
+    font-family: "Noto Sans", sans-serif; */
+
+/* Fonte 2 Inter
+    font-family: "Inter", sans-serif; */
+
+:root {
+    --font01-notosans: "Noto Sans", Arial, Helvetica, sans-serif;
+    --font02-inter: "Inter", Arial, Helvetica, sans-serif ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font02-inter);
+    font-size: 1em;
+    background-color: #9addf8;
+    height: 100dvh;
+}
+
+header {
+    background-color: #12335e;
+    padding: 12px;
+    color: white;
+}
+
+header > h1 {
+    border: 1px dotted whitesmoke;
+}
+
+header > nav {
+    border: 1px dotted whitesmoke;
+}
+
+main {
+    background-color: white;
+    margin: 10px auto 10px auto;
+    max-width: 750px;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 2px 2px 3px #0000005b;
+}
