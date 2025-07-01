@@ -22,11 +22,16 @@
 body {
     font-family: var(--font02-inter);
     font-size: 1em;
-    background-color: #9addf8;
+    background-color: lightskyblue;
     height: 100dvh;
 }
 
 header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
     background-color: #12335e;
     padding: 12px;
     color: white;
@@ -34,10 +39,30 @@ header {
 
 header > h1 {
     border: 1px dotted whitesmoke;
+    flex: 0 0 180px;
 }
 
 header > nav {
     border: 1px dotted whitesmoke;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+header > nav > a:hover {
+    background-color: whitesmoke;
 }
 
 main {
