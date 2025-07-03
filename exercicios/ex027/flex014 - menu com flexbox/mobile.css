@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#itens {
+    width: 100%;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    background-color: #00010fef;
+
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+#itens > a {
+    font-weight: 600;
+    text-align: center;
+    margin: 8px 0px;
+    width: 50vw;
+}
+
+#menu-burguer {
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    width: 45px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+#menu-burguer:active {
+    background-color: rgba(192, 192, 192, 0.295);
+}
+
+header > h1 {
+    flex: 0 1 50px;
+}

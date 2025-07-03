@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 630px)">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Logo</h1>
+        <span class="fa-solid fa-bars" id="menu-burguer" onclick="clickMenu()"></span>
+        <nav id="itens">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 631) {
+                itens.style.display = "flex"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == "flex") {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "flex"
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/feda94bc06.js" crossorigin="anonymous">
+    </script>
+</body>
+</html>
