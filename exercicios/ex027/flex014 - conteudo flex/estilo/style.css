@@ -52,14 +52,22 @@ article > div.text {
     flex: 1 1 500px;
 }
 
-article > div.media {
-    flex: 1 0 400px;
+/* article > div.media {
+    flex: 1 0 0px;
+} */
+
+div#imagem1 {
+    flex: 1 0 320px;
+}
+
+div#video1 {
+    flex: 1 0 300px;
 }
 
 div.media > img {
     display: block;
     margin: auto;
-    max-width: 90%;
+    width: 350px;
 }
 
 div.media > iframe {
