@@ -8,12 +8,15 @@
         div.container {
             border: 3px solid cornflowerblue;
             display: grid;
-            height: 350px;
 
-            grid-template: repeat(3, auto) / repeat(3, auto);
-            place-items: start center;
-            place-content: space-between end;
-            gap: 5px;
+            grid-auto-rows: 80px;
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-columns: 120px;
+            grid-auto-flow: row;
+            place-items: normal normal;
+            place-content: normal normal;
+            gap: 10px;
         }
 
         div.item {
@@ -31,6 +34,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
