@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Estilo para tablets */
+@media screen and (min-width:768px) and (max-width: 1000px){
+    body {
+        background-image: linear-gradient(-110deg, #2f356b, #2f96a1);
+    }
+
+    #container {
+        width: 80vw;
+        height: 360px;
+    }
+
+    #imagem {
+        background-image: url(../imagens/background\ para\ tablet.jpg);
+        background-position: center center;
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    div#formulario {
+        float: right;
+        width: 60%;
+    }
+
+    div#formulario > h1 {
+        font-size: 1.8em;
+        
+    }
+}
+/* Estilo para telas Grandes Monitores/notebooks e TVs */
+@media screen and (min-width: 1000px) {
+    body {
+        background-image: linear-gradient(-110deg, #2f356b, #2f96a1);
+    }
+    
+    #container {
+        width: 920px;
+        height: 380px;
+    }
+
+    #imagem {
+        background-image: url(../imagens/background.jpg);
+        background-size: cover;
+        background-position: top right;
+        float: right;
+        width: 40%;
+        height: 100%;
+    }
+     div#formulario {
+        width: 60%;
+        float: left;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+        
+    }
+
+    div#formulario > p {
+        text-align: center;
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* Estilo principal Mobile first */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #1c2041;
+    --cor02: #23737c;
+    --cor03: #98c5ba;
+    --cor04: #c2986c;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque-com-serifa: "Roboto Slab", serif;
+    --font-destaque-sem-serifa: "Noto Sans", sans-serif;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: #23737c;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 22px;
+    width: 300px;
+    height: 590px;
+    
+    box-shadow: 3px 3px 5px #00000070, -3px -3px 5px #eefafc70;
+    
+    /*
+     isso pode ser alterado/substituido usando Flexbox
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+
+    transition: width 0.5s;
+}
+
+#imagem {
+    height: 35%;
+    background-image: url(../imagens/background\ mobile\ first.jpg);
+    background-size: cover;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+    font-family: var(--font-destaque-sem-serifa);
+}
+
+div#formulario > p {
+    font-family: var(--font-destaque-sem-serifa);
+    margin-bottom: 10px;
+}
+
+.campo > label {display: none;}
+
+div.campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor01);
+    padding: 2px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+div.campo > span {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    width: 35px;
+}
+
+div.campo input {
+    background-color: aliceblue;
+    font-size: 1em;
+    padding: 15px 5px;
+    width: calc(100% - 35px);
+    border-radius: 12px;
+    border: none;
+}
+
+div.campo input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    background-color: var(--cor03);
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: 2px solid var(--cor02);
+    cursor: pointer;
+}
+
+form > a {
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 2px solid var(--cor02);
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 12px;
+}
+
+form > input:active {
+    background-color: #23737cb7;
+}
+
+form > a:active {
+    background-color: #23737cb7;
+}
+
+form > a > span {
+    font-size: 0.7em;
+}
